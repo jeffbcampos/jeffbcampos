@@ -1,0 +1,41 @@
+op = 'S'
+
+while op == 'S':
+  print('=-' * 20)
+  print('''
+Qual operação você deseja realizar:
+
+1. Soma 
+2. Subtração
+3. Multiplicação
+4. Divisão
+5. Potência
+6. Raiz quadrada 
+''')
+  print('=-' * 20)
+  n = int(input('Digite o número correspondente: '))
+  if n == 1:
+    n1 = float(input('Digite um número: '))
+    n2 = float(input('Digite outro número: '))
+    print(' A soma de total de {} e {} é {}'.format(n1, n2, n1 + n2))
+  if n == 2:
+    n1 = float(input('Digite um número: '))
+    n2 = float(input('Digite outro número: '))
+    print(' A subtração entre {} e {} é {}'.format(n1, n2, n1 - n2))
+  if n == 3:
+    n1 = float(input('Digite um número: '))
+    n2 = float(input('Digite outro número: '))
+    print(' A multiplicação entre {} e {} é {}'.format(n1, n2, n1 * n2)) 
+  if n == 4:
+    n1 = float(input('Digite um número: '))
+    n2 = float(input('Digite outro número: '))
+    print(' A divisão entre {} e {} é {:.2f}'.format(n1, n2, n1/n2))  
+  if n == 5:
+    n1 = float(input('Digite um número: '))
+    n2 = float(input('Digite outro número: '))
+    print(' A potência de {} elevado à {} é {}'.format(n1, n2, n1 ** n2))
+  if n == 6:
+    n1 = float(input('Digite um número para saber sua raiz quadrada: '))
+    print('A raiz quadrada de {} é igual à {:.2f}'.format(n1, n1 ** 0.5))
+  op = str(input('Deseja continuar? [S/N]').upper())
+print('FIM')
